@@ -1,0 +1,87 @@
+[
+  {
+    "text": "设计草案",
+    "items": []
+  },
+  {
+    "text": "设计记录",
+    "items": [
+      {
+        "text": "持久任务运行时",
+        "link": "/changes/archive/2026-10-04-add-durable-background-job-runtime/"
+      },
+      {
+        "text": "记忆与预算",
+        "link": "/changes/archive/2026-10-04-add-session-memory-modes/"
+      },
+      {
+        "text": "用户认证",
+        "link": "/changes/archive/2026-10-04-add-user-authentication/"
+      },
+      {
+        "text": "诊断桌面交互",
+        "link": "/changes/archive/2026-10-04-build-final-aiops-workspace/"
+      },
+      {
+        "text": "聊天桌面交互",
+        "link": "/changes/archive/2026-10-04-build-final-chat-workspace-and-citations/"
+      },
+      {
+        "text": "知识库页面",
+        "link": "/changes/archive/2026-10-04-build-knowledge-base-workspace/"
+      },
+      {
+        "text": "十套Java电商夹具",
+        "link": "/changes/archive/2026-10-04-create-correlated-ecommerce-aiops-fixtures/"
+      },
+      {
+        "text": "HTTP及SSE协议",
+        "link": "/changes/archive/2026-10-04-define-api-and-sse-contracts/"
+      },
+      {
+        "text": "用户隔离",
+        "link": "/changes/archive/2026-10-04-enforce-tenant-isolation/"
+      },
+      {
+        "text": "持久聊天",
+        "link": "/changes/archive/2026-10-04-manage-chat-sessions/"
+      },
+      {
+        "text": "文档及切分",
+        "link": "/changes/archive/2026-10-04-manage-knowledge-documents-and-chunking/"
+      },
+      {
+        "text": "Prompt及Skill",
+        "link": "/changes/archive/2026-10-04-manage-prompts-and-progressive-skills/"
+      },
+      {
+        "text": "真实MCP",
+        "link": "/changes/archive/2026-10-04-manage-real-mcp-connections-and-tools/"
+      },
+      {
+        "text": "案例知识闭环",
+        "link": "/changes/archive/2026-10-04-persist-and-automate-diagnosis-cases/"
+      },
+      {
+        "text": "混合检索",
+        "link": "/changes/archive/2026-10-04-provide-reranked-hybrid-knowledge-retrieval/"
+      },
+      {
+        "text": "可恢复诊断与证据",
+        "link": "/changes/archive/2026-10-04-run-aiops-diagnosis-and-store-evidence/"
+      },
+      {
+        "text": "持久索引",
+        "link": "/changes/archive/2026-10-04-run-durable-document-indexing/"
+      },
+      {
+        "text": "本地基础设施",
+        "link": "/changes/archive/2026-10-04-setup-local-infrastructure-and-milvus/"
+      },
+      {
+        "text": "Agentic RAG与审计",
+        "link": "/changes/archive/2026-10-04-stream-agentic-rag-chat-and-audit-tools/"
+      }
+    ]
+  }
+]

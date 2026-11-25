@@ -1,0 +1,3 @@
+CREATE TABLE background_jobs(id TEXT PRIMARY KEY,owner TEXT NOT NULL REFERENCES users(id),kind TEXT NOT NULL,resource_id TEXT NOT NULL,status TEXT NOT NULL,payload TEXT NOT NULL,attempt INTEGER NOT NULL DEFAULT 0,max_attempts INTEGER NOT NULL DEFAULT 3,timeout_seconds INTEGER NOT NULL DEFAULT 600,available_at TEXT NOT NULL,lease_owner TEXT,lease_expires_at TEXT,cancel_requested_at TEXT,error_message TEXT,retry_of_job_id TEXT,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,started_at TEXT,completed_at TEXT);
+CREATE INDEX jobs_claim ON background_jobs(status,available_at,lease_expires_at);
+CREATE TABLE background_job_events(job_id TEXT NOT NULL REFERENCES background_jobs(id) ON DELETE CASCADE,sequence INTEGER NOT NULL,data TEXT NOT NULL,PRIMARY KEY(job_id,sequence));

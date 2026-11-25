@@ -1,0 +1,25 @@
+{
+  "llm": {
+    "apiKey": "",
+    "chatModel": "qwen3.7-max",
+    "embeddingModel": "text-embedding-v4",
+    "modelCapabilities": {
+      "qwen3.7-max": {
+        "contextWindowTokens": 1000000
+      }
+    }
+  },
+  "slsMcpServer": {
+    "profile": "default"
+  },
+  "slsLogUpload": {
+    "endpoint": "https://cn-hangzhou.log.aliyuncs.com",
+    "accessKeyId": "",
+    "accessKeySecret": "",
+    "project": "",
+    "logstore": ""
+  },
+  "mcp": {
+    "toolTimeoutSeconds": {}
+  }
+}

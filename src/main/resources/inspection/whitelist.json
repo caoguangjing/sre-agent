@@ -1,0 +1,164 @@
+{
+  "metrics": [
+    {
+      "category": "基础",
+      "name": "pod_cpu_limit_usage",
+      "displayName": "CPU 利用率",
+      "promql": "avg(pod_cpu_limit_usage{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "pod 相对 limit 的 CPU 利用率"
+    },
+    {
+      "category": "基础",
+      "name": "pod_memory_util",
+      "displayName": "内存利用率",
+      "promql": "avg(pod_memory_util{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "pod 内存使用量/内存总量"
+    },
+    {
+      "category": "基础",
+      "name": "pod_root_disk_util",
+      "displayName": "磁盘利用率",
+      "promql": "avg(pod_root_disk_util{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "pod 根磁盘利用率"
+    },
+    {
+      "category": "基础",
+      "name": "pod_root_disk_inode_util",
+      "displayName": "inode 利用率",
+      "promql": "avg(pod_root_disk_inode_util{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "pod 根磁盘 inode 利用率"
+    },
+    {
+      "category": "基础",
+      "name": "pod_event_oom",
+      "displayName": "OOM 次数",
+      "promql": "sum(pod_event_oom{app_name=\"{app}\"})",
+      "unit": "次",
+      "description": "发生 OOM 的 pod 数（分钟窗口计数，0 为正常）"
+    },
+    {
+      "category": "基础",
+      "name": "pod_machine_count",
+      "displayName": "机器数",
+      "promql": "avg(pod_machine_count{app_name=\"{app}\"})",
+      "unit": "台",
+      "description": "应用在线机器数，突降可能为机器掉线或缩容"
+    },
+    {
+      "category": "基础",
+      "name": "pod_network_pktdrp_perc",
+      "displayName": "网络丢包率",
+      "promql": "avg(pod_network_pktdrp_perc{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "pod 网络丢包率"
+    },
+    {
+      "category": "JVM",
+      "name": "jvm_mem_heap_usage",
+      "displayName": "堆内存利用率",
+      "promql": "avg(jvm_mem_heap_usage{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "JVM 堆内存利用率"
+    },
+    {
+      "category": "JVM",
+      "name": "jvm_gc_fgc_count",
+      "displayName": "FullGC 次数",
+      "promql": "sum(jvm_gc_fgc_count{app_name=\"{app}\"})",
+      "unit": "次",
+      "description": "FullGC 分钟增量计数，0 为正常"
+    },
+    {
+      "category": "JVM",
+      "name": "jvm_thread_deadlock_count",
+      "displayName": "死锁线程数",
+      "promql": "sum(jvm_thread_deadlock_count{app_name=\"{app}\"})",
+      "unit": "个",
+      "description": "JVM 死锁线程数，0 为正常"
+    },
+    {
+      "category": "流量",
+      "name": "pod_nginx_qps",
+      "displayName": "Nginx QPS",
+      "promql": "sum(pod_nginx_qps{app_name=\"{app}\"})",
+      "unit": "次/s",
+      "description": "Nginx 入口每秒请求数"
+    },
+    {
+      "category": "流量",
+      "name": "pod_nginx_rt",
+      "displayName": "Nginx RT",
+      "promql": "avg(pod_nginx_rt{app_name=\"{app}\"})",
+      "unit": "ms",
+      "description": "Nginx 入口平均响应时间"
+    },
+    {
+      "category": "HTTP 入口",
+      "name": "http_provider_service_bucket_count",
+      "displayName": "HTTP 入口 QPS",
+      "promql": "sum(http_provider_service_bucket_count{app_name=\"{app}\"})",
+      "unit": "次/s",
+      "description": "HTTP 服务入口请求量"
+    },
+    {
+      "category": "HTTP 入口",
+      "name": "http_provider_service_bucket_rt",
+      "displayName": "HTTP 入口 RT",
+      "promql": "avg(http_provider_service_bucket_rt{app_name=\"{app}\"})",
+      "unit": "ms",
+      "description": "HTTP 服务入口平均响应时间"
+    },
+    {
+      "category": "HTTP 入口",
+      "name": "http_provider_service_error_bucket_count",
+      "displayName": "HTTP 入口异常 QPS",
+      "promql": "sum(http_provider_service_error_bucket_count{app_name=\"{app}\"})",
+      "unit": "次/s",
+      "description": "HTTP 服务入口异常请求数，突增通常代表故障"
+    },
+    {
+      "category": "线程池",
+      "name": "middleware_tomcat_thread_busy_util",
+      "displayName": "Tomcat 忙碌线程占比",
+      "promql": "avg(middleware_tomcat_thread_busy_util{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "tomcat 工作线程池忙碌线程占比"
+    },
+    {
+      "category": "数据库",
+      "name": "middleware_tddl_connection_active_count",
+      "displayName": "TDDL 活跃连接数",
+      "promql": "sum(middleware_tddl_connection_active_count{app_name=\"{app}\"})",
+      "unit": "个",
+      "description": "数据库连接池活跃连接数，突增可能为慢查询堆积"
+    },
+    {
+      "category": "数据库",
+      "name": "middleware_tddl_connection_error_count",
+      "displayName": "TDDL 异常连接数",
+      "promql": "sum(middleware_tddl_connection_error_count{app_name=\"{app}\"})",
+      "unit": "个",
+      "description": "数据库异常连接数，0 为正常"
+    },
+    {
+      "category": "缓存",
+      "name": "middleware_tair_read_hit_rate",
+      "displayName": "Tair 读命中率",
+      "promql": "avg(middleware_tair_read_hit_rate{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "Tair 缓存读命中率，突降可能为缓存失效"
+    },
+    {
+      "category": "缓存",
+      "name": "middleware_tair_read_success_rate",
+      "displayName": "Tair 读成功率",
+      "promql": "avg(middleware_tair_read_success_rate{app_name=\"{app}\"})",
+      "unit": "%",
+      "description": "Tair 缓存读成功率，突降代表缓存访问异常"
+    }
+  ]
+}

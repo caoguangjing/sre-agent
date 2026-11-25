@@ -1,0 +1,164 @@
+[
+  {
+    "number": 1,
+    "name": "bootstrap-project-foundation",
+    "title": "锁定技术栈与安全 Monorepo 骨架",
+    "capability": "p01-bootstrap-project-foundation"
+  },
+  {
+    "number": 2,
+    "name": "define-api-and-sse-contracts",
+    "title": "统一 HTTP、错误、OpenAPI 与 SSE 契约",
+    "capability": "p02-define-api-and-sse-contracts"
+  },
+  {
+    "number": 3,
+    "name": "setup-sqlite-repository-foundation",
+    "title": "SQLite 版本化迁移与 Repository 基础",
+    "capability": "p03-setup-sqlite-repository-foundation"
+  },
+  {
+    "number": 4,
+    "name": "add-user-authentication",
+    "title": "用户认证",
+    "capability": "p04-add-user-authentication"
+  },
+  {
+    "number": 5,
+    "name": "enforce-tenant-isolation",
+    "title": "Authorization 与 tenant 隔离基线",
+    "capability": "p05-enforce-tenant-isolation"
+  },
+  {
+    "number": 6,
+    "name": "configure-qwen-model-providers",
+    "title": "Qwen/OpenAI-compatible 模型提供者",
+    "capability": "p06-configure-qwen-model-providers"
+  },
+  {
+    "number": 7,
+    "name": "setup-local-infrastructure-and-milvus",
+    "title": "本地基础设施与 Milvus 向量边界",
+    "capability": "p07-setup-local-infrastructure-and-milvus"
+  },
+  {
+    "number": 8,
+    "name": "build-chinese-vue-app-shell",
+    "title": "中文桌面 Vue 工作台壳",
+    "capability": "p08-build-chinese-vue-app-shell"
+  },
+  {
+    "number": 9,
+    "name": "add-durable-background-job-runtime",
+    "title": "Durable Background Job Runtime",
+    "capability": "p09-add-durable-background-job-runtime"
+  },
+  {
+    "number": 10,
+    "name": "manage-knowledge-documents-and-chunking",
+    "title": "知识文档与切分策略",
+    "capability": "p10-manage-knowledge-documents-and-chunking"
+  },
+  {
+    "number": 11,
+    "name": "run-durable-document-indexing",
+    "title": "持久文档索引流水线",
+    "capability": "p11-run-durable-document-indexing"
+  },
+  {
+    "number": 12,
+    "name": "provide-reranked-hybrid-knowledge-retrieval",
+    "title": "混合召回、RRF 与真实 Rerank",
+    "capability": "p12-provide-reranked-hybrid-knowledge-retrieval"
+  },
+  {
+    "number": 13,
+    "name": "build-knowledge-base-workspace",
+    "title": "最终知识库桌面工作区",
+    "capability": "p13-build-knowledge-base-workspace"
+  },
+  {
+    "number": 14,
+    "name": "manage-chat-sessions",
+    "title": "持久 Chat 会话",
+    "capability": "p14-manage-chat-sessions"
+  },
+  {
+    "number": 15,
+    "name": "stream-agentic-rag-chat-and-audit-tools",
+    "title": "Agentic RAG Chat、SSE 与工具审计",
+    "capability": "p15-stream-agentic-rag-chat-and-audit-tools"
+  },
+  {
+    "number": 16,
+    "name": "manage-prompts-and-progressive-skills",
+    "title": "用户 Prompt 与渐进式 Skill",
+    "capability": "p16-manage-prompts-and-progressive-skills"
+  },
+  {
+    "number": 17,
+    "name": "add-session-memory-modes",
+    "title": "会话级记忆模式与上下文预算",
+    "capability": "p17-add-session-memory-modes"
+  },
+  {
+    "number": 18,
+    "name": "manage-real-mcp-connections-and-tools",
+    "title": "用户级真实 MCP 连接与工具治理",
+    "capability": "p18-manage-real-mcp-connections-and-tools"
+  },
+  {
+    "number": 19,
+    "name": "build-final-chat-workspace-and-citations",
+    "title": "最终 Chat 工作区、引用与打字机",
+    "capability": "p19-build-final-chat-workspace-and-citations"
+  },
+  {
+    "number": 20,
+    "name": "integrate-active-alerts",
+    "title": "真实告警入口与 SLS 日志输入",
+    "capability": "p20-integrate-active-alerts"
+  },
+  {
+    "number": 21,
+    "name": "run-aiops-diagnosis-and-store-evidence",
+    "title": "Durable AIOps 诊断、证据链与报告",
+    "capability": "p21-run-aiops-diagnosis-and-store-evidence"
+  },
+  {
+    "number": 22,
+    "name": "persist-and-automate-diagnosis-cases",
+    "title": "诊断案例自动沉淀与知识闭环",
+    "capability": "p22-persist-and-automate-diagnosis-cases"
+  },
+  {
+    "number": 23,
+    "name": "build-final-aiops-workspace",
+    "title": "最终 AIOps 桌面工作区",
+    "capability": "p23-build-final-aiops-workspace"
+  },
+  {
+    "number": 24,
+    "name": "collect-user-feedback",
+    "title": "统一结构化用户反馈",
+    "capability": "p24-collect-user-feedback"
+  },
+  {
+    "number": 25,
+    "name": "create-correlated-ecommerce-aiops-fixtures",
+    "title": "十套相关联的 Java 电商 AIOps Fixtures",
+    "capability": "p25-create-correlated-ecommerce-aiops-fixtures"
+  },
+  {
+    "number": 26,
+    "name": "complete-runtime-readiness-observability-and-operations",
+    "title": "Readiness、可观测性与本地运维交付",
+    "capability": "p26-complete-runtime-readiness-observability-and-operations"
+  },
+  {
+    "number": 27,
+    "name": "design-records",
+    "title": "功能设计文档",
+    "capability": "p27-design-records"
+  }
+]
